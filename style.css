@@ -1,0 +1,316 @@
+:root {};
+body {
+width: 100%;
+height: auto;
+background-color: #ffffff;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body main {
+width:  100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #ffffff;
+}
+body main #holder {
+width: auto;
+height: auto;
+display:flex;
+border-radius: 8px;
+box-shadow: 0px 4px 8px 0px #000000, 0px 6px 20px 0px #000000;
+}
+body main #holder #userInterface{
+width: auto;
+background: #ffffff;
+padding: 25px 25px 25px 25px;
+}
+body main #holder #userInterface #content #errorCover {
+display: flex;
+width: 100%;
+height: auto;
+align-items: center;
+justify-content: center;
+visibility: visible;
+}
+body main #holder #userInterface #content #errorCover #errorField{
+width: 280px;
+height: 50px;
+justify-self: center;
+border: solid 2px rgb(42, 42, 42);
+border-radius: 8px;
+background-color: #f2f2f2;
+}
+body main #holder #userInterface #content form #errorCover #errorField #errorMessage {
+color: black;
+text-align: center;
+font-family: system-ui;
+}
+body main #holder #userInterface #content #textContainer h1 {
+text-align: center;
+font-family: system-ui;
+margin: 0px 0px 0px 0px;
+}
+body main #holder #userInterface #content #textContainer span {
+text-align: center;
+font-family: system-ui;
+}
+body main #holder #userInterface #content form #firstname {
+margin: 20px 40px 0px 40px;
+width: 250px;
+height: auto;
+padding: 18px 18px 18px 18px;
+border-radius: 8px;
+background-color: #f2f2f2;
+}
+body main #holder #userInterface #content form #firstname #firstName {
+border: 0px;
+outline: 0px;
+width: 235px;
+background-color: #f2f2f2;
+font-family: system-ui;
+}
+body main #holder #userInterface #content form #firstname #firstName::placeholder {
+padding: 0px 0px 0px 0px;
+}
+body main #holder #userInterface #content form #lastname {
+margin: 20px 40px 0px 40px;
+width: 250px;
+height: auto;
+padding: 18px 18px 18px 18px;
+border-radius: 8px;
+background-color: #f2f2f2;
+}
+body main #holder #userInterface #content form #lastname #lastName {
+border: 0px;
+outline: 0px;
+width: 235px;
+background-color: #f2f2f2;
+font-family: system-ui;
+}
+body main #holder #userInterface #content form #surnname #surnName::placeholder {
+padding: 0px 0px 0px 0px; 
+}
+body main #holder #userInterface #content form #emailaddress #emailAddress {
+border: 0px;
+outline: 0px; 
+width: 235px; 
+background-color: #f2f2f2;
+font-family: system-ui;
+}
+body main #holder #userInterface #content form #emailaddress #emailAddress::placeholder {
+padding: 0px 0px 0px 0px;
+}
+body main #holder #userInterface #content form #emailaddress {
+margin: 20px 40px 0px 40px;
+width: 250px;
+height: auto;
+padding: 18px 18px 18px 18px;
+border-radius: 8px;
+background-color: #f2f2f2;
+}
+body main #holder #userInterface #content form #phonenumber #phoneNumber {
+border: 0px;
+outline: 0px;
+width: 235px;
+background-color: #f2f2f2;
+font-family: system-ui;
+}
+body main #holder #userInterface #content form #phonenumber #phoneNumber::placeholder {
+padding: 0px 0px 0px 0px;
+}
+body main #holder #userInterface #content form #phonenumber {
+margin: 20px 40px 0px 40px;
+width: 250px;
+height: auto;
+padding: 18px 18px 18px 18px;
+border-radius: 8px;
+background-color: #f2f2f2;
+}
+body main #holder #userInterface #content form #password #Password {
+border: 0px;
+outline: 0px;
+width: 235px;
+background-color: #f2f2f2;
+font-family: system-ui;
+}
+body main #holder #userInterface #content form #password #Password::placeholder {
+padding: 0px 0px 0px 0px;
+}
+body main #holder #userInterface #content form #password {
+margin: 20px 40px 0px 40px;
+width: 250px;
+height: auto;
+padding: 18px 18px 18px 18px;
+border-radius: 8px;
+background-color: #f2f2f2;
+}
+body main #holder #userInterface #content form #confirmpassword #confirmPassword {
+border: 0px;
+outline: 0px;
+width: 235px;
+background-color: #f2f2f2;
+font-family: system-ui;
+}
+body main #holder #userInterface #content form #confirmpassword #confirmPassword::placeholder {
+padding: 0px 0px 0px 0px;
+}
+body main #holder #userInterface #content form #confirmpassword {
+margin: 20px 40px 0px 40px;
+width: 250px;
+height: auto;
+padding: 18px 18px 18px 18px;
+border-radius: 8px;
+background-color: #f2f2f2;
+}
+body main #holder #userInterface #content form #buttonDiv {
+margin: 20px 40px 0px 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+body main #holder #userInterface #content form #buttonDiv #buttonFlex {
+margin: 20px 40px 20px 40px;
+width: 160px;
+height: auto;
+padding: 16px 0px 16px 0px;
+border-radius: 24px;
+background-color: #964B00;
+color: #ffffff;
+border: none;
+}
+/*-------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+                         must change!
+--------------------------------------------------------------------
+---------------------------------------------------------------------
+-------------------------------------------------------------------*/
+body main #holder #outputInterface{
+    width: auto;
+    background: #964B00;
+    padding: 25px 25px 25px 25px;
+    }
+body main #holder #outputInterface #content #textContainer h1 {
+    text-align: center;
+    font-family: system-ui;
+    margin: 0px 0px 0px 0px;
+    color: #ffffff;
+    }
+    body main #holder #outputInterface #content #textContainer span {
+    text-align: center;
+    font-family: system-ui;
+    color: #ffffff;
+    }
+body main #holder #outputInterface #content #loginCover {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    }
+body main #holder #outputInterface #content #loginCover #loginField{
+    width: 280px;
+    height: 50px;
+    justify-self: center;
+    border: solid 2px rgb(42, 42, 42);
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: black;
+    }
+body main #holder #outputInterface #content #loginCover #loginField #loginMessage{
+    color: black;
+    text-align: center;
+    font-family: system-ui;
+    }
+body main #holder #outputInterface #content form #firstName2 {
+    margin: 20px 40px 0px 40px;
+    width: 250px;
+    height: auto;
+    padding: 14.5px 18px 14.5px 18px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    }
+    body main #holder #outputInterface #content form #firstName2 #firstName2Text {
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    font-size: small;
+    margin-left: 8px;
+    }
+    body main #holder #outputInterface #content form #lastName2 {
+    margin: 20px 40px 0px 40px;
+    width: 250px;
+    height: auto;
+    padding: 14.5px 18px 14.5px 18px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    }
+    body main #holder #outputInterface #content form #lastName2 #lastName2Text {
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    font-size: small;
+    margin-left: 8px;
+    }
+    body main #holder #outputInterface #content form #emailAddress2 #emailAddress2Text {
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    font-size: small;
+    margin-left: 8px;
+    }
+    body main #holder #outputInterface #content form #emailAddress2 {
+    margin: 20px 40px 0px 40px;
+    width: 250px;
+    height: auto;
+    padding: 14.5px 18px 14.5px 18px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    }
+    body main #holder #outputInterface #content form #phoneNumber2 #phoneNumber2Text {
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    font-size: small;
+    margin-left: 8px;
+    }
+    body main #holder #outputInterface #content form #phoneNumber2 {
+    margin: 20px 40px 0px 40px;
+    width: 250px;
+    height: auto;
+    padding: 14.5px 18px 14.5px 18px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    }
+    body main #holder #outputInterface #content form #password #Password2Text {
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    font-size: small;
+    margin-left: 8px;
+    }
+    body main #holder #outputInterface #content form #Password2 {
+    margin: 20px 40px 0px 40px;
+    width: 250px;
+    height: auto;
+    padding: 14.5px 18px 14.5px 18px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    }
