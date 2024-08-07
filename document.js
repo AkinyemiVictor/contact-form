@@ -10,7 +10,7 @@ const errorMessage = document.getElementById('errorMessage')
 const errorField = document.getElementById('errorField')
 // ============================================================================== display 
 const firstName2 = document.getElementById('firstName2Text')
-const lastName2 = document.getElementById('surnName2Text')
+const lastName2 = document.getElementById('lastName2Text')
 const email2 = document.getElementById('emailAddress2Text')
 const phoneNumber2 = document.getElementById('phoneNumber2Text')
 const Password2 = document.getElementById('Password2Text')
@@ -118,21 +118,19 @@ form.addEventListener('submit', function (e) {
         errorField.style.border = "2px solid red";
         errorField.style.backgroundColor = "#FFD6D6";
         errorMessage.innerHTML = '**Passwords do not match**';
-        return false;
      } else {
         errorMessage.style.color = "green";
         errorField.style.border = "2px solid green";
         errorField.style.backgroundColor = "#DAF7A6";
         errorMessage.innerHTML = '**Submitted Succesfully**';
-        return true;
      }
-}/*, function display(){
-firstName2.innerHTML = data[0],
-lastName2.innerHTML = data[1],
-email2.innerHTML = data[2],
-phoneNumber2.innerHTML = data[3],
-Password2.innerHTML = data[4],
-}*/)
+
+        firstName2.innerHTML = data.firstName,
+        lastName2.innerHTML = data.lastName,
+        email2.innerHTML = data.Email,
+        phoneNumber2.innerHTML = data.phoneNumber,
+        Password2.innerHTML = data.Password
+})
 
     
              //  firstName = document.getElementById('firstName').value;

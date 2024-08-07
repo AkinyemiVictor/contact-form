@@ -34,7 +34,7 @@ justify-content: center;
 visibility: visible;
 }
 body main #holder #userInterface #content #errorCover #errorField{
-width: 280px;
+width: 335px;
 height: 50px;
 justify-self: center;
 border: solid 2px rgb(42, 42, 42);
@@ -57,7 +57,7 @@ font-family: system-ui;
 }
 body main #holder #userInterface #content form #firstname {
 margin: 20px 40px 0px 40px;
-width: 250px;
+width: 300px;
 height: auto;
 padding: 18px 18px 18px 18px;
 border-radius: 8px;
@@ -75,7 +75,7 @@ padding: 0px 0px 0px 0px;
 }
 body main #holder #userInterface #content form #lastname {
 margin: 20px 40px 0px 40px;
-width: 250px;
+width: 300px;
 height: auto;
 padding: 18px 18px 18px 18px;
 border-radius: 8px;
@@ -103,7 +103,7 @@ padding: 0px 0px 0px 0px;
 }
 body main #holder #userInterface #content form #emailaddress {
 margin: 20px 40px 0px 40px;
-width: 250px;
+width: 300px;
 height: auto;
 padding: 18px 18px 18px 18px;
 border-radius: 8px;
@@ -121,7 +121,7 @@ padding: 0px 0px 0px 0px;
 }
 body main #holder #userInterface #content form #phonenumber {
 margin: 20px 40px 0px 40px;
-width: 250px;
+width: 300px;
 height: auto;
 padding: 18px 18px 18px 18px;
 border-radius: 8px;
@@ -139,7 +139,7 @@ padding: 0px 0px 0px 0px;
 }
 body main #holder #userInterface #content form #password {
 margin: 20px 40px 0px 40px;
-width: 250px;
+width: 300px;
 height: auto;
 padding: 18px 18px 18px 18px;
 border-radius: 8px;
@@ -157,7 +157,7 @@ padding: 0px 0px 0px 0px;
 }
 body main #holder #userInterface #content form #confirmpassword {
 margin: 20px 40px 0px 40px;
-width: 250px;
+width: 300px;
 height: auto;
 padding: 18px 18px 18px 18px;
 border-radius: 8px;
@@ -211,7 +211,7 @@ body main #holder #outputInterface #content #loginCover {
     visibility: visible;
     }
 body main #holder #outputInterface #content #loginCover #loginField{
-    width: 280px;
+    width: 335px;
     height: 50px;
     justify-self: center;
     border: solid 2px rgb(42, 42, 42);
@@ -226,7 +226,7 @@ body main #holder #outputInterface #content #loginCover #loginField #loginMessag
     }
 body main #holder #outputInterface #content form #firstName2 {
     margin: 20px 40px 0px 40px;
-    width: 250px;
+    width: 300px;
     height: auto;
     padding: 14.5px 18px 14.5px 18px;
     border-radius: 8px;
@@ -244,7 +244,7 @@ body main #holder #outputInterface #content form #firstName2 {
     }
     body main #holder #outputInterface #content form #lastName2 {
     margin: 20px 40px 0px 40px;
-    width: 250px;
+    width: 300px;
     height: auto;
     padding: 14.5px 18px 14.5px 18px;
     border-radius: 8px;
@@ -268,7 +268,7 @@ body main #holder #outputInterface #content form #firstName2 {
     }
     body main #holder #outputInterface #content form #emailAddress2 {
     margin: 20px 40px 0px 40px;
-    width: 250px;
+    width: 300px;
     height: auto;
     padding: 14.5px 18px 14.5px 18px;
     border-radius: 8px;
@@ -286,7 +286,7 @@ body main #holder #outputInterface #content form #firstName2 {
     }
     body main #holder #outputInterface #content form #phoneNumber2 {
     margin: 20px 40px 0px 40px;
-    width: 250px;
+    width: 300px;
     height: auto;
     padding: 14.5px 18px 14.5px 18px;
     border-radius: 8px;
@@ -304,7 +304,7 @@ body main #holder #outputInterface #content form #firstName2 {
     }
     body main #holder #outputInterface #content form #Password2 {
     margin: 20px 40px 0px 40px;
-    width: 250px;
+    width: 300px;
     height: auto;
     padding: 14.5px 18px 14.5px 18px;
     border-radius: 8px;
