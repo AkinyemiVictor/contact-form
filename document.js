@@ -33,48 +33,73 @@ let data = {
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    if(firstName.value.match(nameRegex)){
+    if(firstName.value === ""){
+        errorMessage.style.color = "red";
+        errorField.style.border = "2px solid red";
+        errorField.style.backgroundColor = "#FFD6D6";
+        console.log('Please input your first name')
+        errorMessage.innerHTML = '**Please input your first name**';
+    }else if (firstName.value.match(nameRegex)) {
         data = {
             ...data, 
             firstName: firstName.value
         }
-
-    }else {
+    }else{
         errorMessage.style.color = "red";
         errorField.style.border = "2px solid red";
         errorField.style.backgroundColor = "#FFD6D6";
-        console.log('Invalid First Name')
-        errorMessage.innerHTML = 'Invalid First Name';
+        console.log('Invalid first name')
+        errorMessage.innerHTML = '**Invalid first name**';
+        return;
     }
 
-    if(lastName.value.match(nameRegex)){
+    if(lastName.value === ""){
+        errorMessage.style.color = "red";
+        errorField.style.border = "2px solid red";
+        errorField.style.backgroundColor = "#FFD6D6";
+        console.log('Please input your last name')
+        errorMessage.innerHTML = '**Please input your last name**';
+    } else if (lastName.value.match(nameRegex)) {
         data = {
             ...data,
             lastName: lastName.value
-        } 
-    } else {
+        }
+    } else{
         errorMessage.style.color = "red";
         errorField.style.border = "2px solid red";
         errorField.style.backgroundColor = "#FFD6D6";
-        console.log('Invalid Last Name')
-        errorMessage.innerHTML = 'Invalid Last Name';
+        console.log('Invalid last name')
+        errorMessage.innerHTML = '**Invalid last name**';
+        return;
     }
 
-    if(Email.value.match(emailRegex)){
+    if(Email.value === ""){
+        errorMessage.style.color = "red";
+        errorField.style.border = "2px solid red";
+        errorField.style.backgroundColor = "#FFD6D6";
+        console.log('Please input an email address')
+        errorMessage.innerHTML = '**Please input an email address**'
+    }else if (Email.value.match(emailRegex)) {
         data = {
             ...data, 
             Email: Email.value
         }
-
-    }else {
+    } else {
         errorMessage.style.color = "red";
         errorField.style.border = "2px solid red";
         errorField.style.backgroundColor = "#FFD6D6";
-        console.log('Invalid Email Address')
-        errorMessage.innerHTML =  "Invalid Email Address";
+        console.log('Invalid email address')
+        errorMessage.innerHTML =  "**Invalid email address**";
+        return;
     }
 
-    if(phoneNumber.value.match(phoneNumberRegex)){
+    if(phoneNumber.value === ""){
+        errorMessage.style.color = "red";
+        errorField.style.border = "2px solid red";
+        errorField.style.backgroundColor = "#FFD6D6";
+        console.log('Please input your phone number')
+        errorMessage.innerHTML = '**Please input your phone number**';
+    } else if (phoneNumber.value.match(phoneNumberRegex)){
         data = {
             ...data,
             phoneNumber: phoneNumber.value
@@ -83,11 +108,18 @@ form.addEventListener('submit', function (e) {
         errorMessage.style.color = "red";
         errorField.style.border = "2px solid red";
         errorField.style.backgroundColor = "#FFD6D6";
-        console.log('Invalid Phone Number')
-        errorMessage.innerHTML = 'Invalid Phone Number';
+        console.log('Invalid phone number')
+        errorMessage.innerHTML = '**Invalid phone number**';
+        return;
     }
 
-    if(Password.value.match(passwordRegex)){
+    if(Password.value === ""){
+        errorMessage.style.color = "red";
+        errorField.style.border = "2px solid red";
+        errorField.style.backgroundColor = "#FFD6D6";
+        console.log('Please input a password')
+        errorMessage.innerHTML = '**Please input a password**';
+    }else if(Password.value.match(passwordRegex)){
         data = {
             ...data, 
             Password: Password.value
@@ -96,34 +128,25 @@ form.addEventListener('submit', function (e) {
         errorMessage.style.color = "red";
         errorField.style.border = "2px solid red";
         errorField.style.backgroundColor = "#FFD6D6";
-        console.log('Invalid Password')
-        errorMessage.innerHTML = 'Invalid Password';
+        console.log('Invalid password')
+        errorMessage.innerHTML = '**Invalid password**';
+        return;
     }
 
-    if(cPassword.value.match(passwordRegex)){
-        data = {
-            ...data,
-            cPassword: cPassword.value
-        }
-    } else {
+    if(cPassword.value === ""){
         errorMessage.style.color = "red";
         errorField.style.border = "2px solid red";
         errorField.style.backgroundColor = "#FFD6D6";
-        console.log('Invalid Password')
-        errorMessage.innerHTML = 'Invalid Password';
-    }
-
-    if(cPassword.value != Password.value){
+        console.log('Please confirm your pasword')
+        errorMessage.innerHTML = '**Please confirm your pasword**';
+    } else if(cPassword.value != Password.value) {
         errorMessage.style.color = "red";
         errorField.style.border = "2px solid red";
         errorField.style.backgroundColor = "#FFD6D6";
+        console.log('Passwords do not match')
         errorMessage.innerHTML = '**Passwords do not match**';
-     } else {
-        errorMessage.style.color = "green";
-        errorField.style.border = "2px solid green";
-        errorField.style.backgroundColor = "#DAF7A6";
-        errorMessage.innerHTML = '**Submitted Succesfully**';
-     }
+        return;
+    }
 
         firstName2.innerHTML = data.firstName,
         lastName2.innerHTML = data.lastName,
@@ -132,7 +155,7 @@ form.addEventListener('submit', function (e) {
         Password2.innerHTML = data.Password
 })
 
-    
-             //  firstName = document.getElementById('firstName').value;
-    // document.getElementById('firstName2').value = firstName;
-   
+        /*errorMessage.style.color = "green";
+        errorField.style.border = "2px solid green";
+        errorField.style.backgroundColor = "#DAF7A6";
+        errorMessage.innerHTML = '**Submitted Succesfully**';  */
